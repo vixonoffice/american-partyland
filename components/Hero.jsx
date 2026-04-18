@@ -16,7 +16,7 @@ const Hero = () => {
     <section id="acasa" className="hero">
       <div className="hero-video-wrap">
         <video autoPlay muted loop playsInline preload="auto" poster="images/garden-01.jpg">
-          <source src="videos/video 0.mp4" type="video/mp4" />
+          <source src="videos/video0_noaudio.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="hero-particles" aria-hidden="true">
