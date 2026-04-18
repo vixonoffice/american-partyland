@@ -77,6 +77,26 @@ setTimeout(() => {
     io.observe(el);
   });
 }, 1000);
+
+// Force hero video autoplay — fix pentru mobile browsers
+setTimeout(() => {
+  const heroVideo = document.querySelector('.hero-video-wrap video');
+  if (!heroVideo) return;
+  heroVideo.muted = true;
+  heroVideo.playsInline = true;
+  const tryPlay = () => heroVideo.play().catch(() => {});
+  tryPlay();
+  // Fallback: porneste la primul touch/click dacă nu a pornit
+  const onInteraction = () => {
+    tryPlay();
+    document.removeEventListener('touchstart', onInteraction);
+    document.removeEventListener('click', onInteraction);
+    document.removeEventListener('scroll', onInteraction);
+  };
+  document.addEventListener('touchstart', onInteraction, { passive: true });
+  document.addEventListener('click', onInteraction);
+  document.addEventListener('scroll', onInteraction, { passive: true });
+}, 1200);
 </script>
 <style id="critical-hero-override">
 html section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }
