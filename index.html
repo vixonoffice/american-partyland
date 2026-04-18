@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>American Partyland · Grădina petrecerilor pentru copii · Râmnicu Vâlcea</title>
+<meta name="description" content="American Partyland — locație exclusivă pentru aniversări, botezuri și petreceri tematice în Râmnicu Vâlcea. 1000m² grădină privată și saloane interioare." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261119a">
+<style>
+/* Inline critical hero fallback — forces correct layout even if external rules fail to apply */
+section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }
+section.hero .hero-video-wrap { position: absolute !important; inset: 0 !important; z-index: 0 !important; overflow: hidden !important; }
+section.hero .hero-video-wrap video { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+section.hero .hero-video-wrap::after { content: '' !important; position: absolute !important; inset: 0 !important; background: linear-gradient(180deg, rgba(26,18,38,0.55) 0%, rgba(26,18,38,0.25) 40%, rgba(251,244,232,0.9) 95%), linear-gradient(90deg, rgba(26,18,38,0.4) 0%, transparent 60%) !important; z-index: 1 !important; }
+section.hero .hero-content { position: relative !important; z-index: 2 !important; max-width: 1360px !important; margin: 0 auto !important; padding-top: 60px !important; display: grid !important; grid-template-columns: 1.3fr 1fr !important; gap: 60px !important; align-items: end !important; min-height: calc(100vh - 180px) !important; }
+section.hero .hero-text, section.hero .hero-text h1, section.hero .hero-lede { color: white !important; }
+section.hero .hero-text h1 { font-size: clamp(48px, 8vw, 130px) !important; }
+@media (max-width: 860px) {
+  section.hero .hero-content { grid-template-columns: 1fr !important; gap: 32px !important; }
+  section.hero { padding: 100px 20px 40px !important; }
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="components/Nav.jsx"></script>
+<script type="text/babel" src="components/Hero.jsx"></script>
+<script type="text/babel" src="components/About.jsx"></script>
+<script type="text/babel" src="components/Services.jsx"></script>
+<script type="text/babel" src="components/VideoShowcase.jsx"></script>
+<script type="text/babel" src="components/Gallery.jsx"></script>
+<script type="text/babel" src="components/Testimonials.jsx"></script>
+<script type="text/babel" src="components/Booking.jsx"></script>
+<script type="text/babel" src="components/Contact.jsx"></script>
+<script type="text/babel" src="components/CtaBanner.jsx"></script>
+<script type="text/babel" src="components/Footer.jsx"></script>
+<script type="text/babel" src="components/Extras.jsx"></script>
+
+<script type="text/babel">
+const App = () => (
+  <>
+    <Nav />
+    <Hero />
+    <Marquee />
+    <About />
+    <Services />
+    <VideoShowcase />
+    <ExperienceStrip />
+    <Gallery />
+    <Testimonials />
+    <Booking />
+    <Contact />
+    <CtaBanner />
+    <Footer />
+    <FloatingSocials />
+  </>
+);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
+// Reveal on scroll
+setTimeout(() => {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.section, .about, .video-showcase, .xp-strip, .testimonials, .cta-banner').forEach(el => {
+    el.classList.add('reveal');
+    io.observe(el);
+  });
+}, 1000);
+</script>
+<style id="critical-hero-override">
+html section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }
+html section.hero > .hero-video-wrap { position: absolute !important; inset: 0 !important; z-index: 0 !important; overflow: hidden !important; display: block !important; }
+html section.hero > .hero-video-wrap > video { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+html section.hero > .hero-content { position: relative !important; z-index: 5 !important; max-width: 1360px !important; margin: 0 auto !important; padding-top: 60px !important; display: grid !important; grid-template-columns: 1.3fr 1fr !important; gap: 60px !important; align-items: end !important; min-height: calc(100vh - 180px) !important; }
+html section.hero .hero-text { color: white !important; }
+html section.hero .hero-text h1 { color: white !important; font-size: clamp(48px, 8vw, 120px) !important; line-height: 0.95 !important; }
+html section.hero .hero-lede { color: rgba(255,255,255,0.92) !important; }
+@media (max-width: 860px) {
+  html section.hero > .hero-content { grid-template-columns: 1fr !important; gap: 32px !important; }
+  html section.hero { padding: 100px 20px 40px !important; }
+}
+@media (max-width: 480px) {
+  html section.hero { padding: 80px 16px 36px !important; }
+  html section.hero .hero-text h1 { font-size: clamp(38px, 10vw, 54px) !important; line-height: 0.98 !important; }
+  html section.hero > .hero-content { padding-top: 30px !important; gap: 24px !important; min-height: calc(100vh - 120px) !important; }
+}
+</style>
+</body>
+</html>
