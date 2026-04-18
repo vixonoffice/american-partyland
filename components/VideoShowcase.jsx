@@ -15,7 +15,7 @@ const VideoShowcase = () => {
           <h2 className="display">Locatia noastra, in imagini vii.</h2>
         </div>
         <p>
-          Trei momente surprinse din gradina American Partyland — atmosfera reala,
+          Trei momente surprinse din locația American Partyland — atmosfera reala,
           decorul, energia. Apasa pentru sunet.
         </p>
       </div>

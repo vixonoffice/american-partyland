@@ -1,18 +1,18 @@
 const GALLERY_DATA = [
-  { src: 'images/garden-01.jpg', cat: 'Grădină', size: 'g-wide' },
+  { src: 'images/garden-01.jpg', cat: 'Exterior', size: 'g-wide' },
   { src: 'images/princess-01.jpg', cat: 'Decor', size: 'g-tall' },
   { src: 'images/tipi-01.jpg', cat: 'Corturi', size: 'g-sm' },
   { src: 'images/balloons-01.jpg', cat: 'Baloane', size: 'g-sm' },
   { src: 'images/kid-slide-01.jpg', cat: 'Joacă', size: 'g-md' },
   { src: 'images/interior-01.jpg', cat: 'Salon', size: 'g-lg' },
   { src: 'images/princess-02.jpg', cat: 'Decor', size: 'g-md' },
-  { src: 'images/garden-02.jpg', cat: 'Grădină', size: 'g-xl' },
+  { src: 'images/garden-02.jpg', cat: 'Exterior', size: 'g-xl' },
   { src: 'images/tipi-02.jpg', cat: 'Corturi', size: 'g-md' },
   { src: 'images/terrace-01.jpg', cat: 'Terasă', size: 'g-md' },
   { src: 'images/princess-03.jpg', cat: 'Decor', size: 'g-md' },
   { src: 'images/kid-slide-02.jpg', cat: 'Joacă', size: 'g-md' },
 ];
-const CATEGORIES = ['Toate', 'Grădină', 'Decor', 'Salon', 'Corturi', 'Joacă', 'Baloane', 'Terasă'];
+const CATEGORIES = ['Toate', 'Exterior', 'Decor', 'Salon', 'Corturi', 'Joacă', 'Baloane', 'Terasă'];
 
 const Gallery = () => {
   const [cat, setCat] = React.useState('Toate');
@@ -42,7 +42,7 @@ const Gallery = () => {
           <span className="label-num">03</span>
           <span className="eyebrow">Galerie</span>
         </div>
-        <h2 className="display">Din grădina noastră.</h2>
+        <h2 className="display">Din locația noastră.</h2>
         <p className="trail">Decor, joc, spațiu. Câteva imagini din petrecerile pe care le-am găzduit.</p>
       </div>
 

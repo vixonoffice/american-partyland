@@ -44,7 +44,7 @@ const Hero = () => {
             <span className="accent-2">sub cerul liber</span>.
           </h1>
           <p className="hero-lede">
-            American Partyland este grădina unde aniversările copiilor devin amintiri.
+            American Partyland este locul unde aniversările copiilor devin amintiri.
             1.000 m² de joacă, decor personalizat și saloane interioare pentru orice vreme —
             în inima Râmnicului Vâlcea.
           </p>
@@ -58,7 +58,7 @@ const Hero = () => {
         <div className="hero-side">
           <div className="hero-badge-card">
             <div className="big">1000m²</div>
-            <div className="label">Grădină privată + saloane interioare</div>
+            <div className="label">Spațiu privat + saloane interioare</div>
           </div>
           <div className="hero-badge-card">
             <div className="big">120+</div>

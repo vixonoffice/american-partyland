@@ -35,7 +35,7 @@ const Footer = () => {
             American<br/>Partyland<span className="dot-accent">.</span>
           </div>
           <p className="footer-lede">
-            Grădina unde aniversările copiilor devin povești. Rezervări deschise pentru 2026.
+            Locul unde aniversările copiilor devin povești. Rezervări deschise pentru 2026.
           </p>
           <div className="footer-socials" style={{marginTop: 22}}>
             <a href="https://www.instagram.com/american.partyland/" target="_blank" rel="noopener" aria-label="Instagram" className="soc instagram">
