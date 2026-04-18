@@ -15,8 +15,15 @@ const Hero = () => {
   return (
     <section id="acasa" className="hero">
       <div className="hero-video-wrap">
-        <video autoPlay muted loop playsInline preload="auto" poster="images/garden-01.jpg">
-          <source src="videos/video0_noaudio.mp4" type="video/mp4" />
+        <video
+          id="hero-video"
+          autoPlay muted loop playsInline
+          webkit-playsinline=""
+          disableRemotePlayback
+          preload="auto"
+          poster="images/garden-01.jpg"
+        >
+          <source src="videos/hero.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="hero-particles" aria-hidden="true">

@@ -11,30 +11,30 @@ const VideoShowcase = () => {
     <section className="video-showcase">
       <div className="video-showcase-head">
         <div>
-          <div className="eyebrow" style={{color: 'var(--sun)', marginBottom: 16}}>✦ În mișcare</div>
-          <h2 className="display">Locația noastră, în imagini vii.</h2>
+          <div className="eyebrow" style={{color: 'var(--sun)', marginBottom: 16}}>✦ In miscare</div>
+          <h2 className="display">Locatia noastra, in imagini vii.</h2>
         </div>
         <p>
-          Trei momente surprinse din grădina American Partyland — atmosfera reală,
-          decorul, energia. Apasă pentru sunet.
+          Trei momente surprinse din gradina American Partyland — atmosfera reala,
+          decorul, energia. Apasa pentru sunet.
         </p>
       </div>
 
       <div className="video-grid">
         <div className="video-tile" onClick={() => togglePlay(0)}>
-          <video ref={el => videoRefs.current[0] = el} autoPlay muted loop playsInline preload="metadata">
-            <source src="videos/video-1_noaudio.mp4" type="video/mp4" />
+          <video ref={el => videoRefs.current[0] = el} autoPlay muted loop playsInline webkit-playsinline="" disableRemotePlayback preload="auto">
+            <source src="videos/video-1_fast.mp4" type="video/mp4" />
           </video>
           <div className="video-play-btn">▶</div>
           <div className="video-tile-label">
-            <small>Grădina</small>
-            Spațiul de joacă
+            <small>Gradina</small>
+            Spatiul de joaca
           </div>
         </div>
         <div className="video-column-stack">
           <div className="video-tile" onClick={() => togglePlay(1)}>
-            <video ref={el => videoRefs.current[1] = el} autoPlay muted loop playsInline preload="metadata">
-              <source src="videos/video-2_noaudio.mp4" type="video/mp4" />
+            <video ref={el => videoRefs.current[1] = el} autoPlay muted loop playsInline webkit-playsinline="" disableRemotePlayback preload="auto">
+              <source src="videos/video-2_fast.mp4" type="video/mp4" />
             </video>
             <div className="video-play-btn">▶</div>
             <div className="video-tile-label">
@@ -43,12 +43,12 @@ const VideoShowcase = () => {
             </div>
           </div>
           <div className="video-tile" onClick={() => togglePlay(2)}>
-            <video ref={el => videoRefs.current[2] = el} autoPlay muted loop playsInline preload="metadata">
-              <source src="videos/video-3_noaudio.mp4" type="video/mp4" />
+            <video ref={el => videoRefs.current[2] = el} autoPlay muted loop playsInline webkit-playsinline="" disableRemotePlayback preload="auto">
+              <source src="videos/video-3_fast.mp4" type="video/mp4" />
             </video>
             <div className="video-play-btn">▶</div>
             <div className="video-tile-label">
-              <small>Atmosferă</small>
+              <small>Atmosfera</small>
               Ziua petrecerii
             </div>
           </div>
