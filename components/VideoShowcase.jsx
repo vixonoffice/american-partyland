@@ -23,7 +23,7 @@ const VideoShowcase = () => {
       <div className="video-grid">
         <div className="video-tile" onClick={() => togglePlay(0)}>
           <video ref={el => videoRefs.current[0] = el} autoPlay muted loop playsInline preload="metadata">
-            <source src="videos/video-1.mp4" type="video/mp4" />
+            <source src="videos/video-1_noaudio.mp4" type="video/mp4" />
           </video>
           <div className="video-play-btn">▶</div>
           <div className="video-tile-label">
@@ -34,7 +34,7 @@ const VideoShowcase = () => {
         <div className="video-column-stack">
           <div className="video-tile" onClick={() => togglePlay(1)}>
             <video ref={el => videoRefs.current[1] = el} autoPlay muted loop playsInline preload="metadata">
-              <source src="videos/video-2.mp4" type="video/mp4" />
+              <source src="videos/video-2_noaudio.mp4" type="video/mp4" />
             </video>
             <div className="video-play-btn">▶</div>
             <div className="video-tile-label">
@@ -44,7 +44,7 @@ const VideoShowcase = () => {
           </div>
           <div className="video-tile" onClick={() => togglePlay(2)}>
             <video ref={el => videoRefs.current[2] = el} autoPlay muted loop playsInline preload="metadata">
-              <source src="videos/video-3.mp4" type="video/mp4" />
+              <source src="videos/video-3_noaudio.mp4" type="video/mp4" />
             </video>
             <div className="video-play-btn">▶</div>
             <div className="video-tile-label">
