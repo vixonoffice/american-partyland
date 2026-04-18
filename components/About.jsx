@@ -7,7 +7,7 @@ const About = () => {
             ✦ Despre noi
           </div>
           <h2 className="display">
-            O grădină construită pentru râsetele lor.
+            Un loc construit pentru râsetele lor.
           </h2>
           <p>
             American Partyland s-a născut dintr-o idee simplă: copiii au nevoie de spațiu.
@@ -15,7 +15,7 @@ const About = () => {
             să-și închipuie că sunt prinți și prințese — fără grija timpului sau a ploii.
           </p>
           <p>
-            Avem o grădină amenajată cu pergole, mese cu scăunele colorate, tobogane
+            Avem un spațiu amenajat cu pergole, mese cu scăunele colorate, tobogane
             gonflabile, trambuline și echipamente de joacă. Iar când vremea ne trădează,
             salonul cu grinzi de lemn și skylights primește oaspeții fără să se simtă
             înghesuit.
@@ -23,7 +23,7 @@ const About = () => {
           <div className="about-stats">
             <div>
               <div className="stat-num">1000m²</div>
-              <div className="stat-label">Grădină privată</div>
+              <div className="stat-label">Spațiu privat</div>
             </div>
             <div>
               <div className="stat-num">120+</div>

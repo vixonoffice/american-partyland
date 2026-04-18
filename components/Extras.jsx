@@ -34,5 +34,47 @@ const Marquee = () => (
   </div>
 );
 
+// Global floating particles — stars & balloons across entire page
+const GLOBAL_PARTICLES = (() => {
+  const items = [];
+  const types = ['star', 'dot', 'balloon', 'sparkle'];
+  const colors = ['--sun', '--magenta-light', '--mint', '--lilac', '--sky-light', '--coral'];
+  for (let i = 0; i < 30; i++) {
+    items.push({
+      type: types[i % types.length],
+      left: (Math.random() * 96 + 2).toFixed(1) + '%',
+      delay: (Math.random() * 20).toFixed(1) + 's',
+      dur: (12 + Math.random() * 16).toFixed(1) + 's',
+      size: type => type === 'balloon' ? (14 + Math.random() * 12) : (5 + Math.random() * 9),
+      color: colors[i % colors.length],
+      drift: (-40 + Math.random() * 80).toFixed(0),
+    });
+  }
+  return items;
+})();
+
+const GlobalParticles = () => (
+  <div className="global-particles" aria-hidden="true">
+    {GLOBAL_PARTICLES.map((p, i) => {
+      const sz = typeof p.size === 'function' ? p.size(p.type) : p.size;
+      return (
+        <span
+          key={i}
+          className={`gp gp-${p.type}`}
+          style={{
+            left: p.left,
+            animationDelay: p.delay,
+            animationDuration: p.dur,
+            width: sz, height: sz,
+            '--color': `var(${p.color})`,
+            '--drift': p.drift + 'px',
+          }}
+        />
+      );
+    })}
+  </div>
+);
+
 window.FloatingSocials = FloatingSocials;
 window.Marquee = Marquee;
+window.GlobalParticles = GlobalParticles;

@@ -9,8 +9,8 @@ const Services = () => {
     {
       cls: 'sun', num: '02', icon: '🎪',
       title: 'Aniversări clasice',
-      desc: 'Patru ore de bucurie cu acces integral la grădină și salon. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.',
-      features: ['4h petrecere', 'Animator', 'Grădină + salon'],
+      desc: 'Patru ore de bucurie cu acces integral la spațiul exterior și salon. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.',
+      features: ['4h petrecere', 'Animator', 'Exterior + salon'],
     },
     {
       cls: 'sky', num: '03', icon: '🏰',

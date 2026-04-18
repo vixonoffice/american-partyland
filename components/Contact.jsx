@@ -16,7 +16,7 @@ const Contact = () => {
     },
     {
       q: 'Ce se întâmplă dacă plouă?',
-      a: 'Salonul interior poate găzdui până la 40 de copii confortabil. Mutăm tot decorul din grădină înăuntru în aprox. 20 de minute, fără costuri suplimentare.',
+      a: 'Salonul interior poate găzdui până la 40 de copii confortabil. Mutăm tot decorul înăuntru în aprox. 20 de minute, fără costuri suplimentare.',
     },
     {
       q: 'Aduceți voi tortul și mâncarea?',
@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
         <h2 className="display">Ne găsești aici. Vino să vezi locația.</h2>
         <p className="trail">
-          Programează o vizită gratuită. Te plimbăm prin grădină, prin salon și răspundem
+          Programează o vizită gratuită. Te plimbăm prin locație, prin salon și răspundem
           la toate întrebările.
         </p>
       </div>

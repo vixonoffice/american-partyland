@@ -1548,6 +1548,95 @@ input[type="date"] {
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.9s ease, transform 0.9s cubic-bezier(.2,.8,.2,1); }
 .reveal.in { opacity: 1; transform: translateY(0); }
 
+/* ===== GLOBAL PARTICLES (stars, balloons, sparkles) ===== */
+.global-particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.gp {
+  position: absolute;
+  bottom: -20px;
+  opacity: 0;
+  animation: gp-rise linear infinite;
+}
+@keyframes gp-rise {
+  0%   { opacity: 0; transform: translateY(0) translateX(0) rotate(0deg) scale(0.5); }
+  8%   { opacity: 0.75; }
+  50%  { transform: translateY(-50vh) translateX(var(--drift, 0px)) rotate(180deg) scale(1); }
+  85%  { opacity: 0.5; }
+  100% { opacity: 0; transform: translateY(-110vh) translateX(calc(var(--drift, 0px) * 1.5)) rotate(360deg) scale(0.8); }
+}
+
+/* Star */
+.gp-star {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background: var(--color, var(--sun));
+}
+
+/* Dot */
+.gp-dot {
+  border-radius: 50%;
+  background: var(--color, var(--magenta-light));
+}
+
+/* Balloon */
+.gp-balloon {
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  background: var(--color, var(--magenta));
+  opacity: 0;
+  animation-name: gp-balloon-rise;
+}
+.gp-balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 1px;
+  height: 10px;
+  background: var(--color, var(--magenta));
+  opacity: 0.5;
+  transform: translateX(-50%);
+}
+@keyframes gp-balloon-rise {
+  0%   { opacity: 0; transform: translateY(0) translateX(0) rotate(-5deg) scale(0.4); }
+  8%   { opacity: 0.6; }
+  25%  { transform: translateY(-25vh) translateX(calc(var(--drift) * 0.5)) rotate(5deg) scale(0.9); }
+  50%  { transform: translateY(-50vh) translateX(var(--drift)) rotate(-3deg) scale(1); }
+  75%  { transform: translateY(-75vh) translateX(calc(var(--drift) * 0.8)) rotate(4deg) scale(0.95); }
+  85%  { opacity: 0.4; }
+  100% { opacity: 0; transform: translateY(-110vh) translateX(calc(var(--drift) * 1.2)) rotate(-2deg) scale(0.7); }
+}
+
+/* Sparkle — twinkle */
+.gp-sparkle {
+  border-radius: 50%;
+  background: var(--color, white);
+  box-shadow: 0 0 6px 2px var(--color, var(--sun));
+  animation-name: gp-sparkle-rise;
+}
+@keyframes gp-sparkle-rise {
+  0%   { opacity: 0; transform: translateY(0) translateX(0) scale(0.3); }
+  10%  { opacity: 0.9; }
+  20%  { opacity: 0.3; }
+  30%  { opacity: 0.8; }
+  50%  { transform: translateY(-50vh) translateX(var(--drift)) scale(1.1); opacity: 0.5; }
+  60%  { opacity: 0.9; }
+  70%  { opacity: 0.3; }
+  85%  { opacity: 0.6; }
+  100% { opacity: 0; transform: translateY(-110vh) translateX(calc(var(--drift) * 1.5)) scale(0.5); }
+}
+
+/* Reduce on mobile for performance */
+@media (max-width: 768px) {
+  .gp:nth-child(n+16) { display: none; }
+}
+@media (max-width: 480px) {
+  .gp:nth-child(n+10) { display: none; }
+}
+
 /* ===== HERO PARTICLES ===== */
 .hero-particles {
   position: absolute; inset: 0; z-index: 1;
