@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>American Partyland · Grădina petrecerilor pentru copii · Râmnicu Vâlcea</title>
 <meta name="description" content="American Partyland — locație exclusivă pentru aniversări, botezuri și petreceri tematice în Râmnicu Vâlcea. 1000m² grădină privată și saloane interioare." />
+<link rel="preload" as="video" href="videos/hero.mp4" type="video/mp4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -78,25 +79,45 @@ setTimeout(() => {
   });
 }, 1000);
 
-// Force hero video autoplay — fix pentru mobile browsers
+// Robust video autoplay — IntersectionObserver + interaction fallback
 setTimeout(() => {
-  const heroVideo = document.querySelector('.hero-video-wrap video');
-  if (!heroVideo) return;
-  heroVideo.muted = true;
-  heroVideo.playsInline = true;
-  const tryPlay = () => heroVideo.play().catch(() => {});
-  tryPlay();
-  // Fallback: porneste la primul touch/click dacă nu a pornit
-  const onInteraction = () => {
-    tryPlay();
-    document.removeEventListener('touchstart', onInteraction);
-    document.removeEventListener('click', onInteraction);
-    document.removeEventListener('scroll', onInteraction);
+  const allVideos = document.querySelectorAll('video[autoplay]');
+
+  allVideos.forEach(v => {
+    v.muted = true;
+    v.defaultMuted = true;
+    v.setAttribute('muted', '');
+    v.setAttribute('playsinline', '');
+  });
+
+  // IntersectionObserver: play when visible, pause when not
+  const videoIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const v = entry.target;
+      if (entry.isIntersecting) {
+        v.play().catch(() => {});
+      } else {
+        v.pause();
+      }
+    });
+  }, { threshold: 0.25 });
+
+  allVideos.forEach(v => videoIO.observe(v));
+
+  // Fallback: force play all visible videos on first user interaction
+  const forcePlay = () => {
+    allVideos.forEach(v => {
+      v.muted = true;
+      v.play().catch(() => {});
+    });
+    document.removeEventListener('touchstart', forcePlay);
+    document.removeEventListener('click', forcePlay);
+    document.removeEventListener('scroll', forcePlay);
   };
-  document.addEventListener('touchstart', onInteraction, { passive: true });
-  document.addEventListener('click', onInteraction);
-  document.addEventListener('scroll', onInteraction, { passive: true });
-}, 1200);
+  document.addEventListener('touchstart', forcePlay, { once: true, passive: true });
+  document.addEventListener('click', forcePlay, { once: true });
+  document.addEventListener('scroll', forcePlay, { once: true, passive: true });
+}, 800);
 </script>
 <style id="critical-hero-override">
 html section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }

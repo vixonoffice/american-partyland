@@ -1,7 +1,7 @@
 const SOCIAL_POSTS = [
   { type: 'img', src: 'images/princess-01.jpg' },
   { type: 'img', src: 'images/tipi-01.jpg' },
-  { type: 'video', src: 'videos/video-2_noaudio.mp4' },
+  { type: 'video', src: 'videos/video-2_fast.mp4' },
   { type: 'img', src: 'images/balloons-01.jpg' },
   { type: 'img', src: 'images/garden-01.jpg' },
   { type: 'img', src: 'images/princess-girl.jpg' },
