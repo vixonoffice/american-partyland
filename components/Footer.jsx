@@ -31,9 +31,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div>
-          <div className="footer-brand">
-            American<br/>Partyland<span className="dot-accent">.</span>
-          </div>
+          <img src="images/logo.png" alt="American Party Land" style={{width: 160, marginBottom: 4}} />
           <p className="footer-lede">
             Locul unde aniversările copiilor devin povești. Rezervări deschise pentru 2026.
           </p>
