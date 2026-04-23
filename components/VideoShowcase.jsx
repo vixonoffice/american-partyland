@@ -38,8 +38,8 @@ const VideoShowcase = () => {
             </video>
             <div className="video-play-btn">▶</div>
             <div className="video-tile-label">
-              <small>Decor</small>
-              Princess Party
+              <small>Interior</small>
+              Foișorul nostru
             </div>
           </div>
           <div className="video-tile" onClick={() => togglePlay(2)}>
