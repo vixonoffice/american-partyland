@@ -24,7 +24,6 @@ const Marquee = () => (
         <React.Fragment key={k}>
           <span className="marquee-item">Aniversări</span>
           <span className="marquee-item">Petreceri tematice</span>
-          <span className="marquee-item">Party Premium</span>
           <span className="marquee-item">Copii 1–10 ani</span>
           <span className="marquee-item">Foișor modern</span>
           <span className="marquee-item">Râmnicu Vâlcea</span>
