@@ -24,7 +24,7 @@ const Services = () => {
           <p>Trei ore de bucurie cu acces integral la spațiul exterior și foișor. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate — totul pregătit pentru copilul tău.</p>
           <div className="service-showcase-features">
             <span>3h petrecere exclusivă</span>
-            <span>Exterior 1.000m²</span>
+            <span>Spațiu generos exterior</span>
             <span>Foișor modern</span>
             <span>Max 20 copii</span>
             <span>Echipamente joacă incluse</span>
