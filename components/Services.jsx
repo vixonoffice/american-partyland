@@ -9,32 +9,14 @@ const Services = () => {
     {
       cls: 'sun', num: '02', icon: '🎪',
       title: 'Aniversări clasice',
-      desc: 'Patru ore de bucurie cu acces integral la spațiul exterior și salon. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.',
-      features: ['4h petrecere', 'Animator', 'Exterior + salon'],
+      desc: 'Trei ore de bucurie cu acces integral la spațiul exterior și foișor. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.',
+      features: ['3h petrecere', 'Exterior + foișor', 'Max 20 copii'],
     },
     {
       cls: 'sky', num: '03', icon: '🏰',
       title: 'Party Premium',
       desc: 'Pachetul all-inclusive cu DJ, foto/video profesional, make-up pentru sărbătorit și experiențe memorabile pentru oaspeți.',
       features: ['DJ', 'Foto/video', 'Costumație'],
-    },
-    {
-      cls: 'dark', num: '04', icon: '🎈',
-      title: 'Botez & Mărțișor',
-      desc: 'Locație cu două saloane, decor rafinat și meniu personalizat. Atmosfera perfectă pentru cei mai mici invitați ai familiei.',
-      features: ['Până la 50 pers', 'Meniu personalizat', 'Decor rafinat'],
-    },
-    {
-      cls: 'grass', num: '05', icon: '🎨',
-      title: 'Ateliere creative',
-      desc: 'Pictură pe față, modelaj, gătit pentru pitici, atelier de prăjituri. Momente de plăcere care îmbină distracția cu învățarea.',
-      features: ['Materiale incluse', '2h atelier', 'Grup 8–15'],
-    },
-    {
-      cls: 'lilac', num: '06', icon: '📸',
-      title: 'Ședințe foto',
-      desc: 'Închiriere pentru ședințe foto cu copii, maternitate sau family. Decor de sezon, pergole, corturi tipi, recuzită variată.',
-      features: ['1–3 ore', 'Recuzită', 'Decor sezonier'],
     },
   ];
 

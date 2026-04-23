@@ -45,24 +45,23 @@ const Hero = () => {
           </h1>
           <p className="hero-lede">
             American Partyland este locul unde aniversările copiilor devin amintiri.
-            1.000 m² de joacă, decor personalizat și saloane interioare pentru orice vreme —
+            Spațiu generos de joacă, decor personalizat și foișor —
             în inima Râmnicului Vâlcea.
           </p>
           <div className="hero-ctas">
             <a href="#rezervare" className="btn-primary">
-              Rezervă data <span className="arrow">→</span>
+              Contactează-ne <span className="arrow">→</span>
             </a>
-            <a href="#galerie" className="btn-ghost">Vezi locația</a>
           </div>
         </div>
         <div className="hero-side">
           <div className="hero-badge-card">
-            <div className="big">1000m²</div>
-            <div className="label">Spațiu privat + saloane interioare</div>
+            <div className="big" style={{fontSize: 'clamp(22px, 3.5vw, 38px)', lineHeight: 1.2}}>Spațiu generos</div>
+            <div className="label">Aer liber + foișor închis</div>
           </div>
           <div className="hero-badge-card">
-            <div className="big">120+</div>
-            <div className="label">Petreceri organizate cu grijă</div>
+            <div className="big">1–10</div>
+            <div className="label">Ani, petreceri pentru copii</div>
           </div>
         </div>
       </div>
