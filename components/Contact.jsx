@@ -15,20 +15,20 @@ const Contact = () => {
       a: 'Recomandăm 3–6 săptămâni pentru weekend, iar pentru perioadele aglomerate (mai, iunie, septembrie) chiar 2 luni. Pentru zilele lucrătoare putem găsi date și cu o săptămână înainte.',
     },
     {
-      q: 'Ce se întâmplă dacă plouă?',
-      a: 'Salonul interior poate găzdui până la 40 de copii confortabil. Mutăm tot decorul înăuntru în aprox. 20 de minute, fără costuri suplimentare.',
-    },
-    {
-      q: 'Aduceți voi tortul și mâncarea?',
-      a: 'Putem colabora cu cofetăria noastră parteneră sau puteți aduce tortul de acasă. Pentru mâncare oferim catering la cerere sau permitem catering extern.',
+      q: 'Aduceți voi mâncarea și băuturile?',
+      a: 'Vesela (farfurii de unică folosință, tacâmuri, pahare), mâncarea, gustările și băuturile sunt în responsabilitatea dumneavoastră.',
     },
     {
       q: 'Câți copii putem aduce?',
-      a: 'Între 8 și 30 de copii este intervalul ideal. Putem găzdui până la 40 de copii cu supliment pentru animatori.',
+      a: 'Locația poate găzdui maximum 20 de copii.',
     },
     {
       q: 'Ce vârste sunt potrivite?',
-      a: 'Locația e proiectată pentru copii 3–12 ani. Avem echipamente separate pentru cei mici și cei mai mari.',
+      a: 'Locația este dedicată copiilor cu vârste între 1 și 10 ani.',
+    },
+    {
+      q: 'Cât durează o petrecere și cât costă?',
+      a: 'Tariful standard este 750 lei pentru 3 ore. Prelungirea se face cu 200 lei/oră, cu rezervare în prealabil și în funcție de disponibilitate.',
     },
   ];
 
@@ -39,20 +39,19 @@ const Contact = () => {
           <span className="label-num">05</span>
           <span className="eyebrow">Contact & Locație</span>
         </div>
-        <h2 className="display">Ne găsești aici. Vino să vezi locația.</h2>
+        <h2 className="display">Ne găsești aici.</h2>
         <p className="trail">
-          Programează o vizită gratuită. Te plimbăm prin locație, prin salon și răspundem
-          la toate întrebările.
+          Sună-ne sau dă-ne un mesaj și răspundem la toate întrebările tale.
         </p>
       </div>
 
       <div className="contact-block">
         <div className="map-wrap">
           <div className="map-pin">
-            <span>📍</span> Strada Cloșca, Râmnicu Vâlcea
+            <span>📍</span> Strada Cloșca 12B, Râmnicu Vâlcea
           </div>
           <iframe
-            src="https://www.google.com/maps?q=Strada+Closca+Ramnicu+Valcea&output=embed"
+            src="https://www.google.com/maps?q=Strada+Closca+12B+Ramnicu+Valcea&output=embed"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -64,21 +63,21 @@ const Contact = () => {
             <div className="icon">📍</div>
             <div>
               <h4>Adresă</h4>
-              <p>Strada Cloșca<br/>240157 Râmnicu Vâlcea<br/>Vâlcea, România</p>
+              <p>Strada Cloșca 12B<br/>Râmnicu Vâlcea</p>
             </div>
           </div>
-          <a href="tel:0752592893" className="contact-card">
+          <a href="tel:0742777989" className="contact-card">
             <div className="icon">☏</div>
             <div>
               <h4>Telefon & WhatsApp</h4>
-              <p>0752 592 893<br/>Luni–Duminică, 9:00 – 20:00</p>
+              <p>0742 777 989<br/>0752 593 893<br/>Luni–Duminică, 10:00 – 22:00</p>
             </div>
           </a>
           <div className="contact-card">
             <div className="icon">⏱</div>
             <div>
-              <h4>Program vizite</h4>
-              <p>Marți–Vineri, 10:00 – 17:00<br/>Cu programare prealabilă</p>
+              <h4>Program</h4>
+              <p>Luni–Duminică, 10:00 – 22:00</p>
             </div>
           </div>
         </div>
