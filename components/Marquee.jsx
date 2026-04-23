@@ -1,7 +1,7 @@
 const Marquee = () => {
   const items = [
-    'Aniversări copii', 'Botez & Mărțișor', 'Petreceri tematice',
-    'Decor personalizat', 'Spațiu exterior 1.000 m²', 'Saloane interioare',
+    'Aniversări copii', 'Botez & Mărțișor',
+    'Decor personalizat', 'Spațiu exterior 1.000 m²', 'Foișor modern',
     'Animatori & facepainting', 'Catering la cerere',
   ];
   const all = [...items, ...items];

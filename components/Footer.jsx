@@ -65,7 +65,6 @@ const Footer = () => {
         <div>
           <h4>Servicii</h4>
           <ul>
-            <li><a href="#servicii">Petreceri tematice</a></li>
             <li><a href="#servicii">Aniversări clasice</a></li>
             <li><a href="#tarife">Tarife</a></li>
           </ul>

@@ -8,6 +8,13 @@ const Testimonials = () => {
   const [active, setActive] = React.useState(0);
   const t = TESTIMONIALS[active];
 
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setActive(a => (a + 1) % TESTIMONIALS.length);
+    }, 5500);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="testimonials">
       <div className="testimonial-carousel">
@@ -15,7 +22,7 @@ const Testimonials = () => {
           <div className="eyebrow" style={{color: 'rgba(255,255,255,0.7)', marginBottom: 24}}>
             ✦ Recenzii părinți
           </div>
-          <blockquote className="testimonial-quote">
+          <blockquote key={active} className="testimonial-quote testimonial-quote-anim">
             "{t.quote}"
           </blockquote>
           <div className="testimonial-author">
