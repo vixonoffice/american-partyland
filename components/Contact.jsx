@@ -83,7 +83,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div style={{marginTop: 140}}>
+      <div style={{marginTop: 80}}>
         <div className="section-head">
           <div className="label">
             <span className="label-num">06</span>
@@ -108,7 +108,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div style={{marginTop: 140}}>
+      <div style={{marginTop: 80}}>
         <div className="section-head">
           <div className="label">
             <span className="label-num">07</span>
