@@ -15,18 +15,26 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="services-grid" style={{justifyContent: 'center'}}>
-        <div className="service-card sun" style={{maxWidth: 520}}>
-          <div className="service-num">01</div>
-          <div className="service-icon">🎪</div>
-          <h3>Aniversări clasice</h3>
-          <p>Trei ore de bucurie cu acces integral la spațiul exterior și foișor. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.</p>
-          <div className="service-features">
-            <span>3h petrecere</span>
-            <span>Exterior + foișor</span>
-            <span>Max 20 copii</span>
+      <div className="service-showcase">
+        <div className="service-showcase-left">
+          <div className="service-showcase-badge">
+            <span>✦</span> Serviciu principal
           </div>
-          <div className="service-arrow">→</div>
+          <h3>Aniversări<br/>clasice</h3>
+          <p>Trei ore de bucurie cu acces integral la spațiul exterior și foișor. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate — totul pregătit pentru copilul tău.</p>
+          <div className="service-showcase-features">
+            <span>3h petrecere exclusivă</span>
+            <span>Exterior 1.000m²</span>
+            <span>Foișor modern</span>
+            <span>Max 20 copii</span>
+            <span>Echipamente joacă incluse</span>
+          </div>
+          <div className="service-showcase-cta">
+            <a href="#rezervare" className="btn-primary">Rezervă acum <span className="arrow">→</span></a>
+          </div>
+        </div>
+        <div className="service-showcase-right">
+          <img src="images/garden-01.jpg" alt="Spațiu exterior American Partyland" />
         </div>
       </div>
     </section>

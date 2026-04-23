@@ -16,7 +16,7 @@ const Portfolio = () => {
         </div>
         <h2 className="display">Povești pe care nu le mai uită nimeni.</h2>
         <p className="trail">
-          O selecție din ultimele luni — aniversări, botezuri, party-uri tematice.
+          O selecție din ultimele luni — aniversări și momente de neuitat.
         </p>
       </div>
       <div className="events-grid">
