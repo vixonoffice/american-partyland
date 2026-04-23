@@ -16,6 +16,7 @@ const Testimonials = () => {
   }, []);
 
   return (
+    <>
     <section className="testimonials">
       <div className="testimonial-carousel">
         <div>
@@ -76,6 +77,7 @@ const Testimonials = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 
