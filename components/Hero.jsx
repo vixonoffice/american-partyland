@@ -44,9 +44,11 @@ const Hero = () => {
             <span className="accent-2">sub cerul liber</span>.
           </h1>
           <p className="hero-lede">
-            Inima orașului, într-un cadru verde și aerisit, departe de agitația urbană.
-            Am creat un spațiu în care copiii se bucură de joacă în aer curat, iar fiecare
-            aniversare devine o experiență plină de energie, sănătate și momente de neuitat.
+            American Partyland este locul unde aniversările copiilor devin amintiri.
+            Spațiu generos de joacă, decor personalizat și foișor — în inima orașului,
+            într-un cadru verde și aerisit, departe de agitația urbană, am creat un spațiu
+            în care copiii se bucură de joacă în aer curat, iar fiecare aniversare devine
+            o experiență plină de energie, sănătate și momente de neuitat.
           </p>
           <div className="hero-ctas">
             <a href="#rezervare" className="btn-primary">
