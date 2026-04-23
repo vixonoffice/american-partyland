@@ -48,8 +48,8 @@ const VideoShowcase = () => {
             </video>
             <div className="video-play-btn">▶</div>
             <div className="video-tile-label">
-              <small>Atmosfera</small>
-              Ziua petrecerii
+              <small>Aniversare</small>
+              8 ani de neuitat
             </div>
           </div>
         </div>
