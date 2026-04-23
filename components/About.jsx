@@ -12,26 +12,25 @@ const About = () => {
           <p>
             American Partyland s-a născut dintr-o idee simplă: copiii au nevoie de spațiu.
             Spațiu să alerge pe iarbă, să se urce pe tobogane, să se ascundă în corturi și
-            să-și închipuie că sunt prinți și prințese — fără grija timpului sau a ploii.
+            să-și închipuie că sunt prinți și prințese — fără grija timpului.
           </p>
           <p>
-            Avem un spațiu amenajat cu pergole, mese cu scăunele colorate, tobogane
-            gonflabile, trambuline și echipamente de joacă. Iar când vremea ne trădează,
-            salonul cu grinzi de lemn și skylights primește oaspeții fără să se simtă
-            înghesuit.
+            Avem un spațiu generos în aer liber, amenajat cu pergole, mese cu scăunele colorate,
+            tobogane gonflabile, trambuline și echipamente de joacă, plus un foișor închis și
+            modern — perfect pentru orice vreme.
           </p>
           <div className="about-stats">
             <div>
-              <div className="stat-num">1000m²</div>
-              <div className="stat-label">Spațiu privat</div>
+              <div className="stat-num" style={{fontSize: 'clamp(22px, 3vw, 34px)'}}>Generos</div>
+              <div className="stat-label">Spațiu privat + foișor</div>
             </div>
             <div>
               <div className="stat-num">120+</div>
-              <div className="stat-label">Petreceri pe an</div>
+              <div className="stat-label">Petreceri organizate</div>
             </div>
             <div>
-              <div className="stat-num">3–12</div>
-              <div className="stat-label">Vârste recomandate</div>
+              <div className="stat-num">1–10</div>
+              <div className="stat-label">Ani, vârste recomandate</div>
             </div>
           </div>
         </div>
