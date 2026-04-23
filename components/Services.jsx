@@ -12,12 +12,6 @@ const Services = () => {
       desc: 'Trei ore de bucurie cu acces integral la spațiul exterior și foișor. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.',
       features: ['3h petrecere', 'Exterior + foișor', 'Max 20 copii'],
     },
-    {
-      cls: 'sky', num: '03', icon: '🏰',
-      title: 'Party Premium',
-      desc: 'Pachetul all-inclusive cu DJ, foto/video profesional, make-up pentru sărbătorit și experiențe memorabile pentru oaspeți.',
-      features: ['DJ', 'Foto/video', 'Costumație'],
-    },
   ];
 
   return (

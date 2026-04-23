@@ -67,7 +67,6 @@ const Footer = () => {
           <ul>
             <li><a href="#servicii">Petreceri tematice</a></li>
             <li><a href="#servicii">Aniversări clasice</a></li>
-            <li><a href="#servicii">Party Premium</a></li>
             <li><a href="#tarife">Tarife</a></li>
           </ul>
         </div>
@@ -75,7 +74,6 @@ const Footer = () => {
           <h4>Contact</h4>
           <ul>
             <li>Strada Cloșca 12B</li>
-            <li>lângă Pensiunea Valentina</li>
             <li>Râmnicu Vâlcea</li>
             <li><a href="tel:0742777989">0742 777 989</a></li>
             <li><a href="tel:0752593893">0752 593 893</a></li>
