@@ -56,12 +56,14 @@ const Hero = () => {
         </div>
         <div className="hero-side">
           <div className="hero-badge-card">
-            <div className="big" style={{fontSize: 'clamp(22px, 3.5vw, 38px)', lineHeight: 1.2}}>Spațiu generos</div>
-            <div className="label">Aer liber + foișor închis</div>
+            <div style={{fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--magenta)', marginBottom: 10}}>Locația noastră</div>
+            <div className="big" style={{fontSize: 'clamp(20px, 3vw, 34px)', lineHeight: 1.15, marginBottom: 8}}>Spațiu generos</div>
+            <div className="label">Aer liber · Foișor modern · Sezon întreg</div>
           </div>
           <div className="hero-badge-card">
-            <div className="big">1–10</div>
-            <div className="label">Ani, petreceri pentru copii</div>
+            <div style={{fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--sky-deep)', marginBottom: 10}}>Vârste recomandate</div>
+            <div className="big" style={{color: 'var(--sky-deep)'}}>1 – 10 ani</div>
+            <div className="label">Petreceri dedicate exclusiv copiilor</div>
           </div>
         </div>
       </div>
