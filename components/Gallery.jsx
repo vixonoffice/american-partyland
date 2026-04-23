@@ -4,7 +4,7 @@ const GALLERY_DATA = [
   { src: 'images/tipi-01.jpg', cat: 'Corturi', size: 'g-sm' },
   { src: 'images/balloons-01.jpg', cat: 'Baloane', size: 'g-sm' },
   { src: 'images/kid-slide-01.jpg', cat: 'Joacă', size: 'g-md' },
-  { src: 'images/interior-01.jpg', cat: 'Salon', size: 'g-lg' },
+  { src: 'images/interior-01.jpg', cat: 'Foișor', size: 'g-lg' },
   { src: 'images/princess-02.jpg', cat: 'Decor', size: 'g-md' },
   { src: 'images/garden-02.jpg', cat: 'Exterior', size: 'g-xl' },
   { src: 'images/tipi-02.jpg', cat: 'Corturi', size: 'g-md' },
@@ -12,7 +12,7 @@ const GALLERY_DATA = [
   { src: 'images/princess-03.jpg', cat: 'Decor', size: 'g-md' },
   { src: 'images/kid-slide-02.jpg', cat: 'Joacă', size: 'g-md' },
 ];
-const CATEGORIES = ['Toate', 'Exterior', 'Decor', 'Salon', 'Corturi', 'Joacă', 'Baloane', 'Terasă'];
+const CATEGORIES = ['Toate', 'Exterior', 'Decor', 'Foișor', 'Corturi', 'Joacă', 'Baloane', 'Terasă'];
 
 const Gallery = () => {
   const [cat, setCat] = React.useState('Toate');
