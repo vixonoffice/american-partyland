@@ -1,19 +1,4 @@
 const Services = () => {
-  const services = [
-    {
-      cls: 'magenta', num: '01', icon: '👑',
-      title: 'Petreceri tematice',
-      desc: 'Prințese, pirați, supereroi, unicorni sau jungla. Construim povestea și decorul pentru tema aleasă de copilul tău.',
-      features: ['Decor complet', 'Recuzită', 'Favors'],
-    },
-    {
-      cls: 'sun', num: '02', icon: '🎪',
-      title: 'Aniversări clasice',
-      desc: 'Trei ore de bucurie cu acces integral la spațiul exterior și foișor. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.',
-      features: ['3h petrecere', 'Exterior + foișor', 'Max 20 copii'],
-    },
-  ];
-
   return (
     <section id="servicii" className="section">
       <div className="section-head">
@@ -22,27 +7,27 @@ const Services = () => {
           <span className="eyebrow">Servicii</span>
         </div>
         <h2 className="display">
-          Alege pachetul. Noi ne ocupăm de restul.
+          Aniversări clasice pentru copii fericiți.
         </h2>
         <p className="trail">
-          Fiecare petrecere e construită în jurul copilului sărbătorit — nu în jurul unei
-          liste standard. Pachetele sunt punctul de plecare.
+          Fiecare petrecere e construită în jurul copilului sărbătorit — trei ore de bucurie,
+          joacă în aer liber și momente pe care le vor povesti mult timp.
         </p>
       </div>
 
-      <div className="services-grid">
-        {services.map((s, i) => (
-          <div key={i} className={`service-card ${s.cls}`}>
-            <div className="service-num">{s.num}</div>
-            <div className="service-icon">{s.icon}</div>
-            <h3>{s.title}</h3>
-            <p>{s.desc}</p>
-            <div className="service-features">
-              {s.features.map((f, j) => <span key={j}>{f}</span>)}
-            </div>
-            <div className="service-arrow">→</div>
+      <div className="services-grid" style={{justifyContent: 'center'}}>
+        <div className="service-card sun" style={{maxWidth: 520}}>
+          <div className="service-num">01</div>
+          <div className="service-icon">🎪</div>
+          <h3>Aniversări clasice</h3>
+          <p>Trei ore de bucurie cu acces integral la spațiul exterior și foișor. Echipamente de joacă, tobogane gonflabile, masă cu scăunele colorate.</p>
+          <div className="service-features">
+            <span>3h petrecere</span>
+            <span>Exterior + foișor</span>
+            <span>Max 20 copii</span>
           </div>
-        ))}
+          <div className="service-arrow">→</div>
+        </div>
       </div>
     </section>
   );
