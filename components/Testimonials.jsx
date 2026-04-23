@@ -1,7 +1,7 @@
 const TESTIMONIALS = [
   { name: 'Andreea M.', detail: 'mamă a Sofiei, 6 ani', quote: 'Cele mai mari râsete pe care le-am auzit de la fetița mea. Decorul princess a fost exact cum ni-l imaginam, iar copiii au avut spațiu să alerge până la apusul soarelui.', initial: 'A' },
-  { name: 'Mihai P.', detail: 'tatăl lui David, 4 ani', quote: 'Am stresat până în ultima clipă din cauza vremii. A plouat — și s-au descurcat în 20 de minute să mute tot în salon. Petrecerea n-a avut niciun moment mort.', initial: 'M' },
-  { name: 'Roxana B.', detail: 'mamă a gemenilor, 7 ani', quote: 'Doi copii, două teme diferite, un animator care a jonglat cu ambele. American Partyland a făcut imposibilul să pară ușor.', initial: 'R' },
+  { name: 'Mihai P.', detail: 'tatăl lui David, 4 ani', quote: 'Spațiul e frumos amenajat, copiii s-au simțit ca acasă. Totul a decurs perfect, fără niciun moment mort. Recomandăm cu drag!', initial: 'M' },
+  { name: 'Roxana B.', detail: 'mamă a gemenilor, 7 ani', quote: 'Am ales American Partyland pentru că e un spațiu dedicat 100% copiilor. Atmosfera e veselă, colorată și sigură. Băieții au vorbit despre petrecere săptămâni întregi!', initial: 'R' },
 ];
 
 const Testimonials = () => {
@@ -43,36 +43,5 @@ const Testimonials = () => {
   );
 };
 
-const ExperienceStrip = () => {
-  const list = [
-    { num: '01', title: 'Pregătim spațiul', kind: 'Înainte de sosire' },
-    { num: '02', title: 'Întâmpinăm copiii cu recuzită tematică', kind: 'Minuta 0' },
-    { num: '03', title: 'Jocuri, activități, atelier creativ', kind: '30–90 min' },
-    { num: '04', title: 'Gustări, sucuri, pauza dulce', kind: 'La jumătate' },
-    { num: '05', title: 'Tort, lumânări, cântec', kind: 'Momentul cheie' },
-    { num: '06', title: 'Joacă liberă + foto de grup', kind: 'Finalul petrecerii' },
-  ];
-  return (
-    <section className="xp-strip">
-      <div>
-        <div className="eyebrow" style={{color: 'var(--sun)', marginBottom: 18}}>
-          ✦ Cum se întâmplă
-        </div>
-        <h2 className="display">O petrecere American Partyland, minut cu minut.</h2>
-        <p>Patru ore construite cu atenție la detalii, conduse de o echipă care a făcut asta de sute de ori.</p>
-      </div>
-      <div className="xp-list">
-        {list.map((x, i) => (
-          <div key={i} className="xp-row">
-            <div className="xp-num">{x.num}</div>
-            <div className="xp-title">{x.title}</div>
-            <div className="xp-kind">{x.kind}</div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
-
 window.Testimonials = Testimonials;
-window.ExperienceStrip = ExperienceStrip;
+window.ExperienceStrip = () => null;

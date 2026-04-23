@@ -8,8 +8,11 @@ const CtaBanner = () => (
       Te ascultăm și construim ziua perfectă împreună.
     </p>
     <div className="cta-banner-ctas">
-      <a href="tel:0752592893" className="btn-primary">
-        ☏ 0752 592 893
+      <a href="tel:0742777989" className="btn-primary">
+        ☏ 0742 777 989
+      </a>
+      <a href="tel:0752593893" className="btn-primary">
+        ☏ 0752 593 893
       </a>
       <a href="#rezervare" className="btn-ghost" style={{borderColor: 'rgba(251,244,232,0.5)'}}>
         Formular rezervare →
