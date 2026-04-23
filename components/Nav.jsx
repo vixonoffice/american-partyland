@@ -20,8 +20,7 @@ const Nav = () => {
     <>
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <a href="#acasa" className="nav-logo">
-          <span className="nav-logo-mark">A</span>
-          American Partyland
+          <img src="images/logo.png" alt="American Party Land" className="nav-logo-img" />
         </a>
         <div className="nav-links">
           {links.map(l => <a key={l.href} href={l.href}>{l.label}</a>)}
