@@ -6,18 +6,19 @@
 <title>American Partyland · Locația petrecerilor pentru copii · Râmnicu Vâlcea</title>
 <meta name="description" content="American Partyland — petreceri magice pentru copii între 1 și 10 ani în Râmnicu Vâlcea. Spațiu generos în aer liber și foișor închis. 750 lei / 3 ore." />
 
-<!-- Preload hero assets for fast LCP -->
+<!-- Preload critical assets early -->
 <link rel="preload" as="image" href="images/garden-01.webp" fetchpriority="high">
+<link rel="preload" as="script" href="bundle.min.js">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Non-blocking Google Fonts (no render-blocking) -->
+<!-- Non-blocking Google Fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 
-<link rel="stylesheet" href="styles.css?v=20261119a">
+<link rel="stylesheet" href="styles.min.css?v=20261119b">
 <style>
-/* Inline critical hero fallback */
+/* Inline critical hero CSS — prevents FOUC before stylesheet loads */
 section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }
 section.hero .hero-video-wrap { position: absolute !important; inset: 0 !important; z-index: 0 !important; overflow: hidden !important; }
 section.hero .hero-video-wrap video { width: 100% !important; height: 100% !important; object-fit: cover !important; }
@@ -34,25 +35,8 @@ section.hero .hero-text h1 { font-size: clamp(48px, 8vw, 130px) !important; }
 <body>
 <div id="root"></div>
 
-<!-- React 18 production builds (minified, no dev warnings) -->
-<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
-
-<!-- Pre-compiled components (no Babel in browser) -->
-<script src="dist/Nav.js"></script>
-<script src="dist/Hero.js"></script>
-<script src="dist/About.js"></script>
-<script src="dist/Services.js"></script>
-<script src="dist/VideoShowcase.js"></script>
-<script src="dist/Gallery.js"></script>
-<script src="dist/Testimonials.js"></script>
-<script src="dist/Pricing.js"></script>
-<script src="dist/Booking.js"></script>
-<script src="dist/Contact.js"></script>
-<script src="dist/CtaBanner.js"></script>
-<script src="dist/Footer.js"></script>
-<script src="dist/Extras.js"></script>
-<script src="dist/app.js"></script>
+<!-- Single minified bundle: React 18 prod + ReactDOM 18 prod + all components -->
+<script src="bundle.min.js" defer></script>
 
 <style id="critical-hero-override">
 html section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }

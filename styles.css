@@ -2111,3 +2111,18 @@ input[type="date"] {
   .global-particles { display: none; }
   .hero-eyebrow, .hero-text h1, .hero-lede, .hero-ctas, .hero-side, .hero-scroll { animation: none; }
 }
+
+/* ===== RENDERING PERFORMANCE ===== */
+/* Skip rendering off-screen sections until near viewport */
+.about,
+.video-showcase,
+.testimonials,
+.cta-banner,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+.section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
