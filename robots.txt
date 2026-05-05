@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block dev artifacts
+Disallow: /components/
+Disallow: /dist/
+Disallow: /uploads/
+Disallow: /pdf/
+Disallow: /new/
+Disallow: /American Partyland.html
+Disallow: /American Partyland v1.html
+
+# Sitemap
+Sitemap: https://americanpartyland.ro/sitemap.xml
