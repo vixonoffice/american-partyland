@@ -83,10 +83,9 @@ const Footer = () => {
         <div>© 2026 American Partyland. Toate drepturile rezervate.</div>
         <div>Râmnicu Vâlcea · Locația unde copilăria se sărbătorește.</div>
         <a href="https://vixonlab.ro" target="_blank" rel="noopener" className="footer-madeby">
-          <span className="fmb-inner">
-            <span className="fmb-star">✦</span>
-            <span>site realizat de <strong>VIXONLAB</strong></span>
-          </span>
+          <span className="fmb-label">crafted by</span>
+          <span className="fmb-brand">VixonLab</span>
+          <span className="fmb-arrow" aria-hidden="true">→</span>
         </a>
       </div>
     </footer>

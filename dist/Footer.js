@@ -131,6 +131,6 @@ const Footer = () => {
     target: "_blank",
     rel: "noopener",
     className: "footer-madeby"
-  }, /*#__PURE__*/React.createElement("span", {className: "fmb-inner"}, /*#__PURE__*/React.createElement("span", {className: "fmb-star"}, "✦"), /*#__PURE__*/React.createElement("span", null, "Designed by ", /*#__PURE__*/React.createElement("strong", null, "VixonLab"))))));
+  }, /*#__PURE__*/React.createElement("span", {className: "fmb-label"}, "crafted by"), /*#__PURE__*/React.createElement("span", {className: "fmb-brand"}, "VixonLab"), /*#__PURE__*/React.createElement("span", {className: "fmb-arrow", "aria-hidden": "true"}, "→"))));
 };
 window.Footer = Footer;
