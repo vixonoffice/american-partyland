@@ -33,6 +33,159 @@ section.hero .hero-text h1 { font-size: clamp(48px, 8vw, 130px) !important; }
 </style>
 </head>
 <body>
+
+<!-- ===== LOADER ===== -->
+<div id="ap-loader" aria-hidden="true">
+  <div class="apl-particles" id="apl-particles"></div>
+  <div class="apl-center">
+    <div class="apl-logo-wrap">
+      <img src="images/logo.png" alt="American Partyland" class="apl-logo-img" />
+    </div>
+    <div class="apl-tagline">petreceri magice pentru copii</div>
+    <div class="apl-bar-wrap">
+      <div class="apl-bar-track">
+        <div id="apl-fill" class="apl-fill"></div>
+      </div>
+      <span id="apl-pct" class="apl-pct">0%</span>
+    </div>
+  </div>
+</div>
+
+<style>
+#ap-loader {
+  position: fixed; inset: 0; z-index: 9999;
+  background: #FBF4E8;
+  display: flex; align-items: center; justify-content: center;
+  transition: clip-path 0.85s cubic-bezier(0.76,0,0.24,1), opacity 0.2s ease;
+  clip-path: inset(0 0 0 0);
+}
+#ap-loader.ap-out {
+  clip-path: inset(100% 0 0 0);
+  pointer-events: none;
+}
+.apl-particles {
+  position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+}
+.apl-dot {
+  position: absolute;
+  border-radius: 50%;
+  animation: apl-float linear infinite;
+  opacity: 0.55;
+}
+@keyframes apl-float {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 0.55; }
+  50%  { opacity: 0.9; }
+  100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+}
+.apl-center {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+  position: relative; z-index: 1;
+}
+.apl-logo-wrap {
+  overflow: hidden;
+  animation: apl-reveal 0.9s cubic-bezier(0.16,1,0.3,1) 0.1s both;
+}
+@keyframes apl-reveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+.apl-logo-img {
+  height: clamp(56px, 10vw, 88px);
+  width: auto;
+  display: block;
+}
+.apl-tagline {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C9A8E9;
+  animation: apl-fade 0.8s ease 0.35s both;
+}
+@keyframes apl-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.apl-bar-wrap {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  animation: apl-fade 0.6s ease 0.4s both;
+}
+.apl-bar-track {
+  width: min(280px, 72vw); height: 2px;
+  background: #EADFC5; border-radius: 2px;
+  overflow: hidden; position: relative;
+}
+.apl-fill {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 0%;
+  background: linear-gradient(90deg, #E03A8A, #FFC64D);
+  border-radius: 2px;
+  transition: none;
+}
+.apl-pct {
+  font-family: 'Plus Jakarta Sans', monospace;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #4A4060;
+}
+</style>
+
+<script>
+(function() {
+  var COLORS = ['#E03A8A','#FFC64D','#3DB8E0','#7CD9B6','#C9A8E9','#FF7A59'];
+  var SHAPES = [50, 50, 50, 0, 0]; // mix circles and squares
+  var pc = document.getElementById('apl-particles');
+  for (var i = 0; i < 22; i++) {
+    var d = document.createElement('div');
+    d.className = 'apl-dot';
+    var size = 5 + Math.random() * 10;
+    var br = SHAPES[Math.floor(Math.random() * SHAPES.length)];
+    d.style.cssText = [
+      'width:' + size + 'px',
+      'height:' + size + 'px',
+      'left:' + (Math.random() * 100) + '%',
+      'top:' + (60 + Math.random() * 50) + '%',
+      'background:' + COLORS[Math.floor(Math.random() * COLORS.length)],
+      'border-radius:' + br + '%',
+      'animation-duration:' + (3.5 + Math.random() * 4) + 's',
+      'animation-delay:' + (Math.random() * 3) + 's'
+    ].join(';');
+    pc.appendChild(d);
+  }
+
+  var fill = document.getElementById('apl-fill');
+  var pct  = document.getElementById('apl-pct');
+  var start = performance.now();
+  var dur = 1300;
+
+  function ease(t) { return t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t; }
+
+  function tick(now) {
+    var t = Math.min((now - start) / dur, 1);
+    var v = Math.round(ease(t) * 100);
+    fill.style.width = v + '%';
+    pct.textContent = v + '%';
+    if (t < 1) { requestAnimationFrame(tick); }
+  }
+  requestAnimationFrame(tick);
+
+  function hide() {
+    var loader = document.getElementById('ap-loader');
+    if (!loader || loader.classList.contains('ap-out')) return;
+    fill.style.width = '100%';
+    pct.textContent = '100%';
+    setTimeout(function() {
+      loader.classList.add('ap-out');
+      setTimeout(function() { loader.style.display = 'none'; }, 900);
+    }, 250);
+  }
+
+  window.addEventListener('load', function() { setTimeout(hide, 200); });
+  setTimeout(hide, 3500);
+})();
+</script>
+
 <div id="root"></div>
 
 <!-- Single minified bundle: React 18 prod + ReactDOM 18 prod + all components -->
