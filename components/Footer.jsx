@@ -85,7 +85,7 @@ const Footer = () => {
         <a href="https://vixonlab.ro" target="_blank" rel="noopener" className="footer-madeby">
           <span className="fmb-inner">
             <span className="fmb-star">✦</span>
-            <span>Designed by <strong>VixonLab</strong></span>
+            <span>site realizat de <strong>VIXONLAB</strong></span>
           </span>
         </a>
       </div>
