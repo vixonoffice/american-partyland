@@ -1523,27 +1523,55 @@ input[type="date"] {
   flex-wrap: wrap; gap: 12px;
 }
 .footer-madeby {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-size: 13px; font-weight: 500;
-  color: rgba(251,244,232,0.45);
+  display: inline-flex; align-items: baseline; gap: 9px;
   text-decoration: none;
   opacity: 1 !important;
-  transition: color 0.2s ease;
-  letter-spacing: 0.01em;
+  position: relative;
+  padding: 4px 2px;
 }
-.footer-madeby:hover { color: rgba(251,244,232,0.85); }
-.fmb-star {
-  color: var(--magenta);
-  font-size: 10px;
-  opacity: 0.7;
+.fmb-label {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(251,244,232,0.5);
+  letter-spacing: 0;
+  transition: color 0.3s ease;
 }
-.fmb-inner { display: inline-flex; align-items: center; gap: 8px; }
-.fmb-inner strong {
-  color: rgba(251,244,232,0.85);
-  font-weight: 700;
-  letter-spacing: 0.04em;
+.fmb-brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--cream);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 11px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.fmb-brand::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -3px;
+  height: 1.5px;
+  background: linear-gradient(90deg, var(--magenta), var(--lilac));
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.fmb-arrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--magenta);
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.footer-madeby:hover .fmb-label { color: rgba(251,244,232,0.75); }
+.footer-madeby:hover .fmb-brand { color: var(--magenta-light); }
+.footer-madeby:hover .fmb-brand::after { transform: scaleX(1); }
+.footer-madeby:hover .fmb-arrow { transform: translateX(4px); }
+@media (max-width: 600px) {
+  .footer-madeby { justify-content: center; }
 }
 .footer-socials { display: flex; gap: 10px; flex-wrap: wrap; }
 .footer-socials a.soc {

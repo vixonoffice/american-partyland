@@ -8,7 +8,7 @@
 
 <!-- Preload critical assets early -->
 <link rel="preload" as="image" href="images/garden-01.webp" fetchpriority="high">
-<link rel="preload" as="script" href="bundle.min.js">
+<link rel="preload" as="script" href="bundle.min.js?v=20260505">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 
-<link rel="stylesheet" href="styles.min.css?v=20261119b">
+<link rel="stylesheet" href="styles.min.css?v=20260505">
 <style>
 /* Inline critical hero CSS — prevents FOUC before stylesheet loads */
 section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }
@@ -167,6 +167,7 @@ section.hero .hero-text h1 { font-size: clamp(48px, 8vw, 130px) !important; }
     fill.style.width = v + '%';
     pct.textContent = v + '%';
     if (t < 1) { requestAnimationFrame(tick); }
+    else { setTimeout(hide, 250); }
   }
   requestAnimationFrame(tick);
 
@@ -175,21 +176,16 @@ section.hero .hero-text h1 { font-size: clamp(48px, 8vw, 130px) !important; }
     if (!loader || loader.classList.contains('ap-out')) return;
     fill.style.width = '100%';
     pct.textContent = '100%';
-    setTimeout(function() {
-      loader.classList.add('ap-out');
-      setTimeout(function() { loader.style.display = 'none'; }, 900);
-    }, 250);
+    loader.classList.add('ap-out');
+    setTimeout(function() { loader.style.display = 'none'; }, 900);
   }
-
-  window.addEventListener('load', function() { setTimeout(hide, 200); });
-  setTimeout(hide, 3500);
 })();
 </script>
 
 <div id="root"></div>
 
 <!-- Single minified bundle: React 18 prod + ReactDOM 18 prod + all components -->
-<script src="bundle.min.js" defer></script>
+<script src="bundle.min.js?v=20260505" defer></script>
 
 <style id="critical-hero-override">
 html section.hero { position: relative !important; min-height: 100vh !important; padding: 120px 40px 60px !important; overflow: hidden !important; }
