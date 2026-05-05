@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://americanpartyland.ro/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://americanpartyland.ro/images/garden-01.jpg</image:loc>
+      <image:title>Grădina American Partyland</image:title>
+      <image:caption>Locația petrecerilor pentru copii — Râmnicu Vâlcea</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://americanpartyland.ro/images/interior-01.jpg</image:loc>
+      <image:title>Foișor închis American Partyland</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://americanpartyland.ro/images/tipi-01.jpg</image:loc>
+      <image:title>Tipi pentru copii American Partyland</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://americanpartyland.ro/images/balloons-01.jpg</image:loc>
+      <image:title>Decor baloane petreceri copii</image:title>
+    </image:image>
+  </url>
+</urlset>
