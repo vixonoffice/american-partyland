@@ -121,7 +121,8 @@ const Hero = () => {
     className: "hero-ctas"
   }, /*#__PURE__*/React.createElement("a", {
     href: "#rezervare",
-    className: "btn-primary"
+    className: "btn-primary",
+    style: {border: '2px solid var(--sun)'}
   }, "Contacteaz\u0103-ne ", /*#__PURE__*/React.createElement("span", {
     className: "arrow"
   }, "\u2192")))), /*#__PURE__*/React.createElement("div", {

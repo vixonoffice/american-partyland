@@ -13,9 +13,6 @@ const Nav = () => {
     href: '#despre',
     label: 'Despre'
   }, {
-    href: '#servicii',
-    label: 'Servicii'
-  }, {
     href: '#galerie',
     label: 'Galerie'
   }, {

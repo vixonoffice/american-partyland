@@ -11,7 +11,6 @@ const Nav = () => {
   const links = [
     { href: '#acasa', label: 'Acasă' },
     { href: '#despre', label: 'Despre' },
-    { href: '#servicii', label: 'Servicii' },
     { href: '#galerie', label: 'Galerie' },
     { href: '#contact', label: 'Contact' },
   ];
