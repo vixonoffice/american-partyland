@@ -51,7 +51,7 @@ const Hero = () => {
             o experiență plină de energie, sănătate și momente de neuitat.
           </p>
           <div className="hero-ctas">
-            <a href="#rezervare" className="btn-primary" style={{border: '2px solid var(--sun)'}}>
+            <a href="#rezervare" className="btn-primary" style={{background:'var(--sun)',color:'var(--ink)',boxShadow:'0 14px 40px -12px var(--sun)',border:'none'}}>
               Contactează-ne <span className="arrow">→</span>
             </a>
           </div>

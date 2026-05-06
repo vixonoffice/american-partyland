@@ -122,7 +122,7 @@ const Hero = () => {
   }, /*#__PURE__*/React.createElement("a", {
     href: "#rezervare",
     className: "btn-primary",
-    style: {border: '2px solid var(--sun)'}
+    style: {background:'var(--sun)',color:'var(--ink)',boxShadow:'0 14px 40px -12px var(--sun)',border:'none'}
   }, "Contacteaz\u0103-ne ", /*#__PURE__*/React.createElement("span", {
     className: "arrow"
   }, "\u2192")))), /*#__PURE__*/React.createElement("div", {
