@@ -6,7 +6,7 @@ const Pricing = () => {
           <span className="label-num">03</span>
           <span className="eyebrow">Tarife</span>
         </div>
-        <h2 className="display">Petreceri între 1–10 ani.</h2>
+        <h2 className="display">Petreceri între 1–14 ani.</h2>
         <p className="trail">
           Un spațiu sigur, colorat și dedicat 100% copiilor — rezervat exclusiv petrecerilor pentru cei mici.
         </p>
@@ -18,25 +18,29 @@ const Pricing = () => {
           <h3 style={{fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'Fraunces, serif', fontStyle: 'italic', margin: '12px 0 8px'}}>750 lei</h3>
           <p style={{fontWeight: 700, marginBottom: 8}}>3 ore de distracție</p>
           <p style={{fontSize: 14, color: 'var(--ink-soft)', lineHeight: 1.6}}>
-            Acces complet la spațiul de joacă în aer liber și foișorul închis, modern.
+            Acces complet la spațiul de joacă în aer liber și foișorul închis, modern, cu tobogan pentru copii.
           </p>
           <div className="service-features" style={{marginTop: 16}}>
             <span>Max. 20 copii</span>
-            <span>Vârste 1–10 ani</span>
+            <span>Vârste 1–7 ani</span>
             <span>Spațiu privat</span>
+            <span>+200 lei/oră prelungire</span>
           </div>
         </div>
 
         <div className="service-card sun" style={{textAlign: 'center'}}>
-          <div className="service-icon" style={{fontSize: 48}}>⏰</div>
-          <h3 style={{fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'Fraunces, serif', fontStyle: 'italic', margin: '12px 0 8px'}}>+200 lei/oră</h3>
-          <p style={{fontWeight: 700, marginBottom: 8}}>Prelungire</p>
+          <div className="service-icon" style={{fontSize: 48}}>🎢</div>
+          <div style={{fontSize: 12, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.7}}>Premium</div>
+          <h3 style={{fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'Fraunces, serif', fontStyle: 'italic', margin: '4px 0 8px'}}>1.150 lei</h3>
+          <p style={{fontWeight: 700, marginBottom: 8}}>3 ore de distracție</p>
           <p style={{fontSize: 14, color: 'var(--ink-soft)', lineHeight: 1.6}}>
-            Cu rezervare în prealabil, în funcție de disponibilitate.
+            Include tobogan gonflabil imens 3,60 m (l) x 6,00 m (L) x 5,50 m (h).
           </p>
           <div className="service-features" style={{marginTop: 16}}>
-            <span>Program 10:00–22:00</span>
-            <span>La cerere</span>
+            <span>Max. 20 copii</span>
+            <span>Vârste 3–14 ani</span>
+            <span>Spațiu privat</span>
+            <span>+300 lei/oră prelungire</span>
           </div>
         </div>
       </div>

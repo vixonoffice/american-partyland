@@ -109,12 +109,12 @@ const Booking = () => {
     onChange: e => set('kids', Math.min(20, parseInt(e.target.value) || 1))
   })), /*#__PURE__*/React.createElement("div", {
     className: "form-group"
-  }, /*#__PURE__*/React.createElement("label", null, "V\xE2rsta s\u0103rb\u0103toritului (1\u201310 ani)"), /*#__PURE__*/React.createElement("input", {
+  }, /*#__PURE__*/React.createElement("label", null, "V\xE2rsta s\u0103rb\u0103toritului (1\u201314 ani)"), /*#__PURE__*/React.createElement("input", {
     type: "number",
     min: "1",
-    max: "10",
+    max: "14",
     value: data.age,
-    onChange: e => set('age', Math.min(10, parseInt(e.target.value) || 1))
+    onChange: e => set('age', Math.min(14, parseInt(e.target.value) || 1))
   }))), /*#__PURE__*/React.createElement("div", {
     className: "form-group"
   }, /*#__PURE__*/React.createElement("label", null, "Noti\u021Be suplimentare"), /*#__PURE__*/React.createElement("textarea", {

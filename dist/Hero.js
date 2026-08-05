@@ -163,7 +163,7 @@ const Hero = () => {
     style: {
       color: 'var(--sky-deep)'
     }
-  }, "1 \u2013 10 ani"), /*#__PURE__*/React.createElement("div", {
+  }, "1 \u2013 14 ani"), /*#__PURE__*/React.createElement("div", {
     className: "label"
   }, "Petreceri dedicate exclusiv copiilor")))), /*#__PURE__*/React.createElement("div", {
     className: "hero-scroll"

@@ -64,7 +64,7 @@ const Hero = () => {
           </div>
           <div className="hero-badge-card">
             <div style={{fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--sky-deep)', marginBottom: 10}}>Vârste recomandate</div>
-            <div className="big" style={{color: 'var(--sky-deep)'}}>1 – 10 ani</div>
+            <div className="big" style={{color: 'var(--sky-deep)'}}>1 – 14 ani</div>
             <div className="label">Petreceri dedicate exclusiv copiilor</div>
           </div>
         </div>

@@ -30,10 +30,10 @@ const Contact = () => {
     a: 'Locația poate găzdui maximum 20 de copii.'
   }, {
     q: 'Ce vârste sunt potrivite?',
-    a: 'Locația este dedicată copiilor cu vârste între 1 și 10 ani.'
+    a: 'Locația este dedicată copiilor cu vârste între 1 și 14 ani: pachetul standard e recomandat pentru 1–7 ani, iar pachetul Premium, cu tobogan gonflabil imens, pentru 3–14 ani.'
   }, {
     q: 'Cât durează o petrecere și cât costă?',
-    a: 'Tariful standard este 750 lei pentru 3 ore. Prelungirea se face cu 200 lei/oră, cu rezervare în prealabil și în funcție de disponibilitate.'
+    a: 'Pachetul standard este 750 lei pentru 3 ore, cu tobogan pentru copii (1–7 ani); prelungirea se face cu 200 lei/oră. Pachetul Premium, cu tobogan gonflabil imens (3–14 ani), este 1.150 lei pentru 3 ore, cu prelungire de 300 lei/oră. Ambele cu rezervare în prealabil și în funcție de disponibilitate.'
   }];
   return /*#__PURE__*/React.createElement("section", {
     id: "contact",
