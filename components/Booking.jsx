@@ -106,9 +106,9 @@ const Booking = () => {
                     onChange={e => set('kids', Math.min(20, parseInt(e.target.value) || 1))} />
                 </div>
                 <div className="form-group">
-                  <label>Vârsta sărbătoritului (1–14 ani)</label>
-                  <input type="number" min="1" max="14" value={data.age}
-                    onChange={e => set('age', Math.min(14, parseInt(e.target.value) || 1))} />
+                  <label>Vârsta sărbătoritului (1–12 ani)</label>
+                  <input type="number" min="1" max="12" value={data.age}
+                    onChange={e => set('age', Math.min(12, parseInt(e.target.value) || 1))} />
                 </div>
               </div>
 

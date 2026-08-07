@@ -29,7 +29,7 @@ const About = () => {
     className: "stat-label"
   }, "Petreceri organizate")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "stat-num"
-  }, "1\u201314"), /*#__PURE__*/React.createElement("div", {
+  }, "1\u201312"), /*#__PURE__*/React.createElement("div", {
     className: "stat-label"
   }, "Ani, v\xE2rste recomandate")))), /*#__PURE__*/React.createElement("div", {
     className: "about-media"

@@ -12,7 +12,7 @@ const Pricing = () => {
     className: "eyebrow"
   }, "Tarife")), /*#__PURE__*/React.createElement("h2", {
     className: "display"
-  }, "Petreceri \xEEntre 1\u201314 ani."), /*#__PURE__*/React.createElement("p", {
+  }, "Petreceri \xEEntre 1\u201312 ani."), /*#__PURE__*/React.createElement("p", {
     className: "trail"
   }, "Un spa\u021Biu sigur, colorat \u0219i dedicat 100% copiilor \u2014 rezervat exclusiv petrecerilor pentru cei mici.")), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -96,7 +96,7 @@ const Pricing = () => {
     style: {
       marginTop: 16
     }
-  }, /*#__PURE__*/React.createElement("span", null, "Max. 20 copii"), /*#__PURE__*/React.createElement("span", null, "V\xE2rste 3\u201314 ani"), /*#__PURE__*/React.createElement("span", null, "Spa\u021Biu privat"), /*#__PURE__*/React.createElement("span", null, "+300 lei/or\u0103 prelungire")))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, "Max. 20 copii"), /*#__PURE__*/React.createElement("span", null, "V\xE2rste 3\u201312 ani"), /*#__PURE__*/React.createElement("span", null, "Spa\u021Biu privat"), /*#__PURE__*/React.createElement("span", null, "+300 lei/or\u0103 prelungire")))), /*#__PURE__*/React.createElement("div", {
     style: {
       maxWidth: 700,
       margin: '40px auto 0',

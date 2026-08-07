@@ -53,11 +53,14 @@ const VideoShowcase = () => {
             </div>
           </div>
         </div>
-        <div className="video-tile" style={{position: 'relative'}}>
-          <img src="images/princess-01.jpg" alt="Preview" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        <div className="video-tile" onClick={() => togglePlay(3)}>
+          <video ref={el => videoRefs.current[3] = el} autoPlay muted loop playsInline webkit-playsinline="" disableRemotePlayback preload="auto">
+            <source src="videos/video-4_fast.mp4" type="video/mp4" />
+          </video>
+          <div className="video-play-btn">▶</div>
           <div className="video-tile-label">
-            <small>Galerie</small>
-            Vezi toate momentele
+            <small>Tobogan</small>
+            Toboganul gonflabil
           </div>
         </div>
       </div>

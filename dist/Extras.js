@@ -47,7 +47,7 @@ const Marquee = () => /*#__PURE__*/React.createElement("div", {
   className: "marquee-item"
 }, "Anivers\u0103ri"), /*#__PURE__*/React.createElement("span", {
   className: "marquee-item"
-}, "Copii 1\u201314 ani"), /*#__PURE__*/React.createElement("span", {
+}, "Copii 1\u201312 ani"), /*#__PURE__*/React.createElement("span", {
   className: "marquee-item"
 }, "Foi\u0219or modern"), /*#__PURE__*/React.createElement("span", {
   className: "marquee-item"

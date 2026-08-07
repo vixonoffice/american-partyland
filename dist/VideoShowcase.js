@@ -83,19 +83,24 @@ const VideoShowcase = () => {
     className: "video-tile-label"
   }, /*#__PURE__*/React.createElement("small", null, "Aniversare"), "8 ani de neuitat"))), /*#__PURE__*/React.createElement("div", {
     className: "video-tile",
-    style: {
-      position: 'relative'
-    }
-  }, /*#__PURE__*/React.createElement("img", {
-    src: "images/princess-01.webp",
-    alt: "Preview",
-    style: {
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover'
-    }
-  }), /*#__PURE__*/React.createElement("div", {
+    onClick: () => togglePlay(3)
+  }, /*#__PURE__*/React.createElement("video", {
+    ref: el => videoRefs.current[3] = el,
+    autoPlay: true,
+    muted: true,
+    loop: true,
+    playsInline: true,
+    "webkit-playsinline": "",
+    disableRemotePlayback: true,
+    preload: "none",
+    poster: "images/tobogan-01.webp"
+  }, /*#__PURE__*/React.createElement("source", {
+    src: "videos/video-4_fast.mp4",
+    type: "video/mp4"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "video-play-btn"
+  }, "▶"), /*#__PURE__*/React.createElement("div", {
     className: "video-tile-label"
-  }, /*#__PURE__*/React.createElement("small", null, "Galerie"), "Vezi toate momentele"))));
+  }, /*#__PURE__*/React.createElement("small", null, "Tobogan"), "Toboganul gonflabil"))));
 };
 window.VideoShowcase = VideoShowcase;

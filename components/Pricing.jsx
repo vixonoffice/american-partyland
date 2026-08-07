@@ -6,7 +6,7 @@ const Pricing = () => {
           <span className="label-num">03</span>
           <span className="eyebrow">Tarife</span>
         </div>
-        <h2 className="display">Petreceri între 1–14 ani.</h2>
+        <h2 className="display">Petreceri între 1–12 ani.</h2>
         <p className="trail">
           Un spațiu sigur, colorat și dedicat 100% copiilor — rezervat exclusiv petrecerilor pentru cei mici.
         </p>
@@ -38,7 +38,7 @@ const Pricing = () => {
           </p>
           <div className="service-features" style={{marginTop: 16}}>
             <span>Max. 20 copii</span>
-            <span>Vârste 3–14 ani</span>
+            <span>Vârste 3–12 ani</span>
             <span>Spațiu privat</span>
             <span>+300 lei/oră prelungire</span>
           </div>

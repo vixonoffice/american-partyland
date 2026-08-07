@@ -29,7 +29,7 @@ const About = () => {
               <div className="stat-label">Petreceri organizate</div>
             </div>
             <div>
-              <div className="stat-num">1–14</div>
+              <div className="stat-num">1–12</div>
               <div className="stat-label">Ani, vârste recomandate</div>
             </div>
           </div>
